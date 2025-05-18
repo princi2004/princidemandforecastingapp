@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Forecasting</title>
+    <link rel="stylesheet" href="stylesss.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Demand Forecasting</h1>
+
+        <!--  Ask how many previous years of sales data -->
+        <label for="yearCount">Enter the  previous no. of years </label>
+        <input type="number" id="yearCount" placeholder="Enter number of years" min="1">
+        <button class="btn" onclick="generateInputFields()">Submit</button>
+        <button class="btn reset" onclick="resetInputs()">Reset</button>
+
+        <!-- Dynamic input fields for sales data -->
+        <div id="salesInputContainer" class="input-container"></div>
+
+        <!--  Display predicted demand and chart -->
+        <div id="resultContainer" class="result-section">
+            <h2>Next Year Demand (Predicted):</h2>
+            <ul id="predictedValues"></ul>
+            <canvas id="forecastChart"></canvas>
+        </div>
+    </div>
+
+    <script src="forecast.js"></script>
+</body>
+</html>

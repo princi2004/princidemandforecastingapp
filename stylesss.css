@@ -1,0 +1,130 @@
+/* General styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #342f21; /* Light Beige background */
+  color: #344E41; /* Dark Teal text color */
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #A3B18A; /* Sage Green background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Smooth hover effect */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading style */
+h1 {
+  color: #344E41; /* Dark Teal color for headings */
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Label styling */
+label {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #3A5A40; /* Deep Green for labels */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Input and button styling */
+input, .btn {
+  padding: 15px;
+  margin: 10px 0;
+  width: calc(100% - 30px); /* Adjust width to fit within container */
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+/* Input styling */
+input {
+  border: 2px solid #3A5A40; /* Deep Green border */
+  background-color: #DAD7CD; /* Light Beige for inputs */
+  color: #344E41; /* Dark Teal text color */
+}
+
+input:focus {
+  border-color: #588157; /* Forest Green on focus */
+  box-shadow: 0 0 8px rgba(88, 129, 87, 0.3);
+  outline: none;
+}
+
+/* Button styling */
+.btn {
+  border: none;
+  color: #DAD7CD; /* Light Beige text color */
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit button */
+.btn {
+  background-color: #588157; /* Forest Green background */
+}
+
+.btn:hover {
+  background-color: #3A5A40; /* Deep Green on hover */
+  transform: translateY(-2px);
+}
+
+/* Reset button */
+.reset {
+  background-color: #A3B18A; /* Sage Green background */
+  margin-top: 10px;
+}
+
+.reset:hover {
+  background-color: #588157; /* Forest Green on hover */
+}
+
+/* Dynamic input fields container */
+.input-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Result section styling */
+.result-section {
+  margin-top: 40px;
+  display: none;
+  padding: 20px;
+  background-color: #DAD7CD; /* Light Beige for result section */
+  border: 2px solid #A3B18A; /* Sage Green border */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+/* Chart styling */
+#forecastChart {
+  max-width: 100%;
+  height: 300px;
+  margin-top: 30px;
+}
+
+/* Next Year Prediction Styling */
+#predictedValues li {
+  font-size: 1.3em;
+  color: #588157; /* Forest Green for predictions */
+  font-weight: bold;
+  margin: 20px 0;
+}
